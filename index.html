@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Resin Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="A_logo_design_for_&quot;Cherry_Resin_Art&quot;_is_displayed_.png" class="logo">
+        <h1>Cherry Resin Art Dashboard</h1>
+    </header>
+
+    <nav class="nav">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('study')">Study Planner</button>
+        <button onclick="showPage('hobbies')">Dance & Piano</button>
+        <button onclick="showPage('business')">Store</button>
+        <button onclick="showPage('calendar')">Daily Tracker</button>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page visible fade">
+        <h2>Welcome, Charishma! 🌸</h2>
+        <p>Your cute pastel dashboard for:</p>
+
+        <ul class="list">
+            <li>📘 Study Sessions</li>
+            <li>💃 Belly Dance Practice</li>
+            <li>🎹 Piano Learning</li>
+            <li>🎨 Resin Art Creations</li>
+            <li>🛍️ Small Business Store</li>
+            <li>📅 Daily Tracking</li>
+        </ul>
+    </section>
+
+    <!-- STUDY -->
+    <section id="study" class="page fade">
+        <h2>📘 Study Planner</h2>
+        <textarea class="box" placeholder="Write your study plan here..."></textarea>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="page fade">
+        <h2>🎀 Hobbies</h2>
+
+        <h3>💃 Belly Dance Practice</h3>
+        <textarea class="box" placeholder="Your dance practice tasks..."></textarea>
+
+        <h3>🎹 Piano Learning</h3>
+        <textarea class="box" placeholder="Your piano lessons notes..."></textarea>
+
+        <h3>🎨 Resin Art Learning</h3>
+        <textarea class="box" placeholder="Your resin art steps..."></textarea>
+    </section>
+
+    <!-- BUSINESS STORE -->
+    <section id="business" class="page fade">
+        <h2>🛍️ Cherry Resin Store</h2>
+
+        <div class="store">
+            <div class="item card">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p class="item-title">Resin Keychain</p>
+                <button onclick="addToCart('Resin Keychain')">Add to Cart</button>
+            </div>
+
+            <div class="item card">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p class="item-title">Heart Resin Bracelet</p>
+                <button onclick="addToCart('Heart Resin Bracelet')">Add to Cart</button>
+            </div>
+        </div>
+
+        <h3>🛒 Your Cart</h3>
+        <ul id="cart"></ul>
+    </section>
+
+    <!-- DAILY TRACKER -->
+    <section id="calendar" class="page fade">
+        <h2>📅 Daily Tracker</h2>
+
+        <label><input type="checkbox"> Study Completed</label><br>
+        <label><input type="checkbox"> Belly Dance Practice</label><br>
+        <label><input type="checkbox"> Piano Practice</label><br>
+        <label><input type="checkbox"> Resin Art Work</label><br>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
